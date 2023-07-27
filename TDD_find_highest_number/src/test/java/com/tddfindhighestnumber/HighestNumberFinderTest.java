@@ -25,14 +25,28 @@ public class HighestNumberFinderTest {
     @Test
     public void find_highest_in_array_of_Two_descending_numbers() {
         // arrange
-        int values[] = {13, 14};
+        int array[] = {13, 4};
         int expectedResult = 13;
         HighestNumberFinder cut = new HighestNumberFinder();
 
         //act
-        int actualResult = cut.findHighestNumber(values);
+        int actualResult = cut.findHighestNumber(array);
 
         //asset
         assertEquals(expectedResult, actualResult);
     }
+    @Test
+    public void find_highest_in_array_of_Two_ascending_numbers() {
+        // arrange
+        int array[] = {7, 13};
+        int expectedResult = 13;
+        HighestNumberFinder cut = new HighestNumberFinder();
+
+        //act
+        int actualResult = cut.findHighestNumber(array);
+
+        //asset
+        assertEquals(expectedResult, actualResult);
+    }
+
 }
