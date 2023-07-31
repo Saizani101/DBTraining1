@@ -48,5 +48,4 @@ public class HighestNumberFinderTest {
         //asset
         assertEquals(expectedResult, actualResult);
     }
-
 }
